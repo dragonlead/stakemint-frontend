@@ -4,9 +4,8 @@ import { PageMeta } from './types'
 import { ASSET_CDN } from './endpoints'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'PancakeSwap',
-  description:
-    'The most popular AMM on BSC by user count! Earn CAKE through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by PancakeSwap), NFTs, and more, on a platform you can trust.',
+  title: 'Stakemint',
+  description: 'The most popular AMM on ARB, then you can stake your token and earn rewards.',
   image: `${ASSET_CDN}/web/og/hero.jpg`,
 }
 
@@ -18,7 +17,7 @@ interface PathList {
 const getPathList = (t: ContextApi['t']): PathList => {
   return {
     paths: {
-      '/': { title: t('Home') },
+      '/': { title: t('Exchange') },
       '/swap': { basePath: true, title: t('Exchange'), image: `${ASSET_CDN}/web/og/swap.jpg` },
       '/limit-orders': { basePath: true, title: t('Limit Orders'), image: `${ASSET_CDN}/web/og/limit.jpg` },
       '/add': { basePath: true, title: t('Add Liquidity'), image: `${ASSET_CDN}/web/og/liquidity.jpg` },
