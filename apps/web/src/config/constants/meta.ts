@@ -6,7 +6,7 @@ import { ASSET_CDN } from './endpoints'
 export const DEFAULT_META: PageMeta = {
   title: 'Stakemint',
   description: 'The most popular AMM on ARB, then you can stake your token and earn rewards.',
-  image: `/images/hero.png`,
+  image: `/images/hero.PNG`,
 }
 
 interface PathList {
