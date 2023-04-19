@@ -1,13 +1,14 @@
 {
-  "name": "@stakemint/uikit",
-  "version": "0.1.0",
+  "name": "@pancakeswap/uikit",
+  "version": "0.63.1",
   "description": "Set of UI components for pancake projects",
   "main": "src/index.ts",
   "sideEffects": [
     "*.css.ts"
   ],
-  "repository": "https://github.com/Stakemint/stakemint-frontend/packages/uikit.git",
+  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "yarn storybook",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
