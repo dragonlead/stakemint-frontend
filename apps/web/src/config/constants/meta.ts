@@ -6,7 +6,7 @@ import { ASSET_CDN } from './endpoints'
 export const DEFAULT_META: PageMeta = {
   title: 'Stakemint',
   description: 'The most popular AMM on ARB, then you can stake your token and earn rewards.',
-  image: `${ASSET_CDN}/web/og/hero.jpg`,
+  image: `/images/hero.png`,
 }
 
 interface PathList {
@@ -58,7 +58,7 @@ const getPathList = (t: ContextApi['t']): PathList => {
       '/pancake-squad': { basePath: true, title: t('Pancake Squad') },
       '/pottery': { basePath: true, title: t('Pottery'), image: `${ASSET_CDN}/web/og/pottery.jpg` },
     },
-    defaultTitleSuffix: t('PancakeSwap'),
+    defaultTitleSuffix: t('Stakemint'),
   }
 }
 
