@@ -76,11 +76,11 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
               ))}
             </StyledList>
           ))}
-          <Box display={["none", null, "block"]}>
+          {/* <Box display={["none", null, "block"]}>
             <LogoWithTextIcon width="160px" />
-          </Box>
+          </Box> */}
         </Flex>
-        <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
+        {/* <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} /> */}
         <StyledToolsContainer
           data-theme="dark"
           order={[1, null, 3]}
@@ -99,7 +99,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
               dropdownPosition="top-right"
             />
           </Flex>
-          <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
+          {/* <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
             <Box mr="20px">
               <CakePrice cakePriceUsd={cakePriceUsd} color="textSubtle" />
             </Box>
@@ -113,7 +113,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
             >
               {buyCakeLabel}
             </Button>
-          </Flex>
+          </Flex> */}
         </StyledToolsContainer>
       </Flex>
     </StyledFooter>
