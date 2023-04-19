@@ -13,7 +13,7 @@
     "@pancakeswap/localization",
     "@pancakeswap/ui",
     "@pancakeswap/ui-wallets",
-    "@pancakeswap/uikit",
+    "@stakemint/uikit",
     "farms-api",
     "aptos-web",
     "blog",

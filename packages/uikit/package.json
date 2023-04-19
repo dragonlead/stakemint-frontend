@@ -17,6 +17,7 @@
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
     "test": "vitest --run",
+    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
