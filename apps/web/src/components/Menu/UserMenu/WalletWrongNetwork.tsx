@@ -36,7 +36,10 @@ const WalletWrongNetwork: React.FC<React.PropsWithChildren<WalletWrongNetworkPro
           <MessageText>{t('Unable to switch network. Please try it on your wallet')}</MessageText>
         </Message>
       )}
-      <StyledLink href="https://docs.pancakeswap.finance/get-started/connection-guide" external>
+      <StyledLink
+        href="https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask"
+        external
+      >
         <Button width="100%" variant="secondary">
           {t('Learn How')}
           <HelpIcon color="primary" ml="6px" />
