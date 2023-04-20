@@ -1,8 +1,7 @@
 import memoize from 'lodash/memoize'
 import { ContextApi } from '@pancakeswap/localization'
 import { PageMeta } from './types'
-// import { ASSET_CDN } from './endpoints'
-const ASSET_CDN = '/images'
+import { ASSET_CDN } from './endpoints'
 
 export const DEFAULT_META: PageMeta = {
   title: 'Stakemint',
@@ -18,7 +17,7 @@ interface PathList {
 const getPathList = (t: ContextApi['t']): PathList => {
   return {
     paths: {
-      '/': { title: t('Exchange') },
+      '/': { title: t('Exchange'), image: `/images/hero.png` },
       '/swap': { basePath: true, title: t('Exchange'), image: `${ASSET_CDN}/web/og/swap.jpg` },
       '/limit-orders': { basePath: true, title: t('Limit Orders'), image: `${ASSET_CDN}/web/og/limit.jpg` },
       '/add': { basePath: true, title: t('Add Liquidity'), image: `${ASSET_CDN}/web/og/liquidity.jpg` },
