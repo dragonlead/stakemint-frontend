@@ -1,7 +1,8 @@
 import memoize from 'lodash/memoize'
 import { ContextApi } from '@pancakeswap/localization'
 import { PageMeta } from './types'
-import { ASSET_CDN } from './endpoints'
+// import { ASSET_CDN } from './endpoints'
+const ASSET_CDN = '/images'
 
 export const DEFAULT_META: PageMeta = {
   title: 'Stakemint',
