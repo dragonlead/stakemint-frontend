@@ -356,9 +356,9 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
     <FarmsContext.Provider value={providerValue}>
       <PageHeader>
         <Flex flexDirection="column">
-          <Box m="24px 0">
+          {/* <Box m="24px 0">
             <FarmV3MigrationBanner />
-          </Box>
+          </Box> */}
           <FarmFlexWrapper justifyContent="space-between">
             <Box>
               <FarmH1 as="h1" scale="xxl" color="secondary" mb="24px">
@@ -367,14 +367,14 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
               <FarmH2 scale="lg" color="text">
                 {t('Stake LP tokens to earn.')}
               </FarmH2>
-              <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
+              {/* <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
                 <Button p="0" variant="text">
                   <Text color="primary" bold fontSize="16px" mr="4px">
                     {t('Community Auctions')}
                   </Text>
                   <ArrowForwardIcon color="primary" />
                 </Button>
-              </NextLinkFromReactRouter>
+              </NextLinkFromReactRouter> */}
             </Box>
             {chainId === ChainId.BSC && (
               <Box>

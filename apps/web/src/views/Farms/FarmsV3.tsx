@@ -394,9 +394,9 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
     <FarmsV3Context.Provider value={providerValue}>
       <PageHeader>
         <Flex flexDirection="column">
-          <Box m="24px 0">
+          {/* <Box m="24px 0">
             <FarmV3MigrationBanner />
-          </Box>
+          </Box> */}
           <FarmFlexWrapper justifyContent="space-between">
             <Box style={{ flex: '1 1 100%' }}>
               <FarmH1 as="h1" scale="xxl" color="secondary" mb="24px">
@@ -405,14 +405,14 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
               <FarmH2 scale="lg" color="text">
                 {t('Stake LP tokens to earn.')}
               </FarmH2>
-              <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
+              {/* <NextLinkFromReactRouter to="/farms/auction" prefetch={false}>
                 <Button p="0" variant="text">
                   <Text color="primary" bold fontSize="16px" mr="4px">
                     {t('Community Auctions')}
                   </Text>
                   <ArrowForwardIcon color="primary" />
                 </Button>
-              </NextLinkFromReactRouter>
+              </NextLinkFromReactRouter> */}
             </Box>
             {/* After boosted enable */}
             {/* {chainId === ChainId.BSC && (
@@ -521,7 +521,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
           </Flex>
         )}
         {chosenFarms.length > 0 && <div ref={observerRef} />}
-        <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} />
+        {/* <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} /> */}
       </Page>
     </FarmsV3Context.Provider>
   )
