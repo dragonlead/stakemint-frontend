@@ -5,6 +5,7 @@ export const scaleVariants = {
   [scales.MD]: {
     height: "48px",
     padding: "0 24px",
+    borderRadius: "24px",
   },
   [scales.SM]: {
     height: "32px",
@@ -21,6 +22,7 @@ export const styleVariants = {
   [variants.PRIMARY]: {
     backgroundColor: "primary",
     color: "invertedContrast",
+    background: "linear-gradient(90deg, #068E5E 0%, #06895C 50%, #0C5744 100%)",
   },
   [variants.SECONDARY]: {
     backgroundColor: "transparent",
