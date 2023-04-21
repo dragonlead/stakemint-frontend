@@ -1,7 +1,7 @@
 export const baseColors = {
   white: 'white',
-  failure: '#ED4B9E',
-  failure33: '#ED4B9E33',
+  failure: '#ED4B4B',
+  failure33: '#ED4B4B33',
   primary: '#0FD17A',
   primary0f: '#1FC7D40f',
   primary3D: '#1FC7D43D',
@@ -10,8 +10,8 @@ export const baseColors = {
   success: '#31D0AA',
   success19: '#31D0AA19',
   warning: '#FFB237',
-  warning2D: '#ED4B9E2D',
-  warning33: '#ED4B9E33',
+  warning2D: '#ED4B4B2D',
+  warning33: '#ED4B4B33',
 }
 
 export const additionalColors = {
