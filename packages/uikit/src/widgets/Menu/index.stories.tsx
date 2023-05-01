@@ -19,7 +19,7 @@ import Menu from "./Menu";
 import { Language, NavProps } from "./types";
 import BottomDrawer from "../../components/BottomDrawer/BottomDrawer";
 import { SubMenuItemsType } from "../../components";
-import { links, userMenulinks } from "./testConfig";
+import { links, linksVertical, userMenulinks } from "./testConfig";
 
 export default {
   title: "Widgets/Menu",
@@ -88,6 +88,7 @@ const defaultProps = {
   currentLang: "EN",
   cakePriceUsd: 0.023158668932877668,
   links,
+  linksVertical,
   subLinks: links[0].items,
   footerLinks,
   profile: null,
@@ -199,6 +200,7 @@ export const NotConnected: React.FC<React.PropsWithChildren> = () => {
         setLang={noop}
         currentLang="EN"
         links={links}
+        linksVertical={linksVertical}
         subLinks={links[0].items as SubMenuItemsType[]}
         footerLinks={footerLinks}
         activeItem="/swap"
@@ -232,6 +234,7 @@ export const WithoutConnectButton: React.FC<React.PropsWithChildren> = () => {
         setLang={noop}
         currentLang="EN"
         links={links}
+        linksVertical={linksVertical}
         footerLinks={footerLinks}
         subLinks={links[0].items as SubMenuItemsType[]}
         activeItem="/swap"
@@ -258,6 +261,7 @@ export const WithSubmenuSelected: React.FC<React.PropsWithChildren> = () => {
         currentLang="EN"
         cakePriceUsd={0.23158668932877668}
         links={links}
+        linksVertical={linksVertical}
         subLinks={links[0].items as SubMenuItemsType[]}
         footerLinks={footerLinks}
         activeItem="/swap"
