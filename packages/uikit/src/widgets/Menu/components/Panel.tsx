@@ -38,6 +38,12 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
     border-right: 2px solid rgba(133, 133, 133, 0.1);
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
+
+  // Remove panel(sidebar-menu) on mobile
+  display: none;
+  ${({ theme }) => theme.mediaQueries.lg} {
+    display: block;
+  }
 `;
 
 const Panel: React.FC<Props> = (props) => {

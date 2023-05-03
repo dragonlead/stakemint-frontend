@@ -18,6 +18,7 @@ import {
   MOBILE_MENU_HEIGHT,
   TOP_BANNER_HEIGHT,
   TOP_BANNER_HEIGHT_MOBILE,
+  FOOTER_HEIGHT,
   SIDEBAR_WIDTH_FULL,
   SIDEBAR_WIDTH_REDUCED,
 } from "./config";
@@ -90,6 +91,7 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(0, 0, 0);
   max-width: 100%;
+  min-height: calc(100vh - ${MENU_HEIGHT}px - ${FOOTER_HEIGHT}px);
 
   ${({ theme }) => theme.mediaQueries.lg} {
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
