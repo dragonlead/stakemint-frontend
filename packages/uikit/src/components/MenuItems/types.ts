@@ -2,6 +2,12 @@
 import { ElementType } from "react";
 import { BoxProps } from "../Box";
 import { DropdownMenuItems } from "../DropdownMenu/types";
+import { Colors } from "../../theme/types";
+
+interface LinkStatus {
+  text: string;
+  color: keyof Colors;
+}
 
 export type MenuItemsType = {
   label: string;
@@ -13,6 +19,9 @@ export type MenuItemsType = {
   disabled?: boolean;
   showOnMobile?: boolean;
   showItemsOnMobile?: boolean;
+  calloutClass?: string;
+  initialOpenState?: boolean;
+  status?: LinkStatus;
 };
 
 export interface MenuItemsProps extends BoxProps {

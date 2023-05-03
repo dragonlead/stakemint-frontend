@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from "react";
+import React, { ElementType, ReactNode, createElement, useState } from "react";
 import styled from "styled-components";
 import { MENU_ENTRY_HEIGHT } from "../config";
 import { LinkLabel, LinkStatus as LinkStatusComponent, MenuEntry } from "./MenuEntry";
@@ -8,7 +8,8 @@ import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../../components/Svg";
 interface Props extends PushedProps {
   label: string;
   status?: LinkStatus;
-  icon: React.ReactElement;
+  // icon: React.ReactElement;
+  icon?: ElementType<any>;
   initialOpenState?: boolean;
   className?: string;
   children: ReactNode;
@@ -43,6 +44,7 @@ const Accordion: React.FC<Props> = ({
   isActive,
 }) => {
   const [isOpen, setIsOpen] = useState(initialOpenState);
+  const Icon = icon;
   const handleClick = () => {
     if (isPushed) {
       setIsOpen((prevState) => !prevState);
@@ -55,7 +57,7 @@ const Accordion: React.FC<Props> = ({
   return (
     <Container>
       <MenuEntry onClick={handleClick} className={className} isActive={isActive}>
-        {icon}
+        {createElement(Icon as any)}
         <LinkLabel isPushed={isPushed}>{label}</LinkLabel>
         {status && (
           <LinkStatusComponent color={status.color} fontSize="14px">
