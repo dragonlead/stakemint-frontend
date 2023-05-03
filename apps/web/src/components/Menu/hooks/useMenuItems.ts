@@ -24,6 +24,7 @@ export const useMenuItems = (onUsCitizenModalPresent?: () => void): ConfigMenuIt
   return useMemo(() => {
     if (menuItemsStatus && Object.keys(menuItemsStatus).length) {
       return menuItems.map((item) => {
+        if (!Array.isArray(item.items)) return { ...item }
         const innerItems = item.items.map((innerItem) => {
           const itemStatus = menuItemsStatus[innerItem.href]
           const modalId = innerItem.confirmModalId

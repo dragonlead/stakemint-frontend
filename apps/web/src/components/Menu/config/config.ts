@@ -11,6 +11,7 @@ import {
   // NftFillIcon,
   // MoreIcon,
   DropdownMenuItems,
+  HomeIcon,
 } from '@pancakeswap/uikit'
 import { ContextApi } from '@pancakeswap/localization'
 // import { nftsBaseUrl } from 'views/Nft/market/constants'
@@ -42,6 +43,7 @@ const config: (
   chainId?: number,
 ) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) =>
   [
+    { label: t('Home'), icon: HomeIcon, fillcon: HomeIcon, href: '/' },
     {
       label: t('Trade'),
       icon: SwapIcon,
