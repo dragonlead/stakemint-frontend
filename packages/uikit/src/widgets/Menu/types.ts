@@ -77,8 +77,9 @@ export interface PanelProps {
   currentLang?: string;
   langs?: Language[];
   setLang?: (lang: Language) => void;
-  // links: Array<MenuEntry>;
   links: Array<MenuItemsType>;
+  activeItem?: string;
+  activeSubItem?: string;
 }
 
 // export interface NavProps extends PanelProps {
