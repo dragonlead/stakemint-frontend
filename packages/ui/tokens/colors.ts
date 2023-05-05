@@ -45,7 +45,7 @@ export const lightColors = {
   textSubtle: '#282F39',
   disabled: '#E9EAEB',
   gradientBubblegum: 'linear-gradient(139.73deg, #D5D5D5 0%, #EFEFEF 100%)',
-  gradientInverseBubblegum: 'linear-gradient(139.73deg, #EFEFFF 0%, #D5D5D5 100%)',
+  gradientInverseBubblegum: 'linear-gradient(139.73deg, #EFEFFF 0%, #FAF9FA 100%)',
   gradientCardHeader: 'linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)',
   gradientBlue: 'linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)',
   gradientViolet: 'linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)',

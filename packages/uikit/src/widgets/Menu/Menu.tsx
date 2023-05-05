@@ -25,6 +25,7 @@ import {
 import { MenuContext } from "./context";
 import { NavProps } from "./types";
 import Panel from "./components/Panel";
+import { ThemeSwitcher } from "../../components";
 
 const Wrapper = styled.div`
   position: relative;
@@ -62,7 +63,7 @@ const FooterConainer = styled.div<{ showMenu: boolean }>`
   // left: 0;
   // bottom: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 10;
 `;
 
 const TopBannerContainer = styled.div<{ height: number }>`
@@ -189,6 +190,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
               <Flex alignItems="center" height="100%">
                 <AtomBox mr="12px" display={{ xs: "none", lg: "block" }}>
                   {/* <CakePrice showSkeleton={false} cakePriceUsd={cakePriceUsd} /> */}
+                  <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
                 </AtomBox>
                 <Box mt="4px">
                   <LangSelector
