@@ -8,7 +8,8 @@ import { getCakeContract } from 'utils/contractHelpers'
 import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'
 import { bitQueryServerClient, infoServerClient } from 'utils/graphql'
 // import Home from '../views/Home'
-import Swap from './swap'
+// import Swap from './swap'
+import Dashboard from 'views/Dashboard'
 
 const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
   return (
@@ -22,7 +23,8 @@ const IndexPage = ({ totalTx30Days, addressCount30Days, tvl }) => {
       }}
     >
       {/* <Home /> */}
-      <Swap />
+      {/* <Swap /> */}
+      <Dashboard />
     </SWRConfig>
   )
 }
